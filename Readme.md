@@ -33,4 +33,10 @@
 ## UX (User Experience) ##
 ---
 ### Project Goals ### 
-The goal of this project is to provide **a beginner guide on how one can successfully keep and care for cherry shrimps.** In the hope that more people will get into the stress-relieving hobby of keeping aquatic pets. 
+The goal of this project is to provide **a beginner guide on how one can successfully keep and care for cherry shrimps.** In the hope that more people get into the stress-relieving hobby of keeping aquatic pets. 
+
+### User Stories ###
+- As a user, I quickly want to find the information I am searching for.
+- As a user, I want an attractive responsive UI that is easily navigated.
+- As a user, I want to be able to access the information on my desktop, laptop or mobile device.
+- As a user, I want to be able to contact the site owner, so I can ask  questions and/or suggest additional content.
