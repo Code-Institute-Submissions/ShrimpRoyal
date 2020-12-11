@@ -50,11 +50,16 @@ The goal of this project is to provide **a beginner guide on how one can success
 
 **Requirements**
 
-- Easy navigation via navbar.
-- Provide useful information throughout the website.
-- The content is visually appealing and easily comprehensible.
-- A functional contact form.
+- Easy navigate the website via navbar.
+- Be provide with useful information throughout the website.
+- Content is visually appealing and easily comprehensible.
+- Be able to contact the site owner.
 
 **Expectations**
 - Navigation steers users to the definite sections of the website.
 - Content is visually delightful displayed and informative.
+- A functional contact form.
+
+## Design Choices ##
+---
+Cherry shrimps originate from the freshwater streams of Taiwan, so the Logo (Shrimp Royale), is loosely inspired by East Asian Kawaii and Taiwanese calligraphy.  
