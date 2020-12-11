@@ -28,3 +28,9 @@
 **_Deployment:_**
 
 **_Credit:_**
+
+---
+## UX (User Experience) ##
+---
+### Project Goals ### 
+The goal of this project is to provide **a beginner guide on how one can successfully keep and care for cherry shrimps.** In the hope that more people will get into the stress-relieving hobby of keeping aquatic pets. 
