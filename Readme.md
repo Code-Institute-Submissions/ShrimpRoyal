@@ -39,4 +39,22 @@ The goal of this project is to provide **a beginner guide on how one can success
 - As a user, I quickly want to find the information I am searching for.
 - As a user, I want an attractive responsive UI that is easily navigated.
 - As a user, I want to be able to access the information on my desktop, laptop or mobile device.
-- As a user, I want to be able to contact the site owner, so I can ask  questions and/or suggest additional content.
+- As a user, I want to be able to contact the site owner in case of questions or if I have suggestions on additional content.
+
+### Site Owner Goals ###
+- As a site owner, I want users to succeed in the aquatic hobby by informing and educating them.
+- As a site owner, I want users to get the stress-relieving joy of watching cherry shrimp thrive in a beautifully well balanced aqua-scaped aquarium.
+- As a site owner, I want to be able to answer questions my users might have
+
+### User Requirements and Expectations ###
+
+**Requirements**
+
+- Easy navigation via navbar.
+- Provide useful information throughout the website.
+- The content is visually appealing and easily comprehensible.
+- A functional contact form.
+
+**Expectations**
+- Navigation steers users to the definite sections of the website.
+- Content is visually delightful displayed and informative.
