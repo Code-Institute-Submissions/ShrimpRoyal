@@ -35,6 +35,17 @@
 ### Project Goals ### 
 The goal of this project is to provide **a beginner guide on how one can successfully keep and care for cherry shrimps.** In the hope that more people get into the stress-relieving hobby of keeping aquatic pets. 
 
+### User Goals ###
+Find information about how to keep and care for cherry shrimps
+1. Cherry shrimp general information
+2. What equipment is needed (Aquarium, Filter, Heater, Light )
+3. substrate ( Gravel, Sand, Dirt, Specializes soil)
+4. Water parameters (KH, GH, PH, TDS, ammonia, nitrite, or nitrate Temperature)
+5. Live plants (easy to intermediate)
+6. AquaScaping ( Rocks, Roots, hardscape, techniques ) 
+7. Be able to contact the site owner either via email or a contact form
+
+
 ### User Stories ###
 - As a user, I quickly want to find the information I am searching for.
 - As a user, I want an attractive responsive UI that is easily navigated.
