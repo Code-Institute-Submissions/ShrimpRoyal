@@ -111,3 +111,17 @@ line-height:1em;
 p{
     letter-spacing: 0.05em;
 }
+
+.infoshrimp{
+    background-image: url("../images/shrimp_info_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    min-height: 20em;
+
+}
+@media (min-width: 768px) { 
+    .infoshrimp{
+        background-position: 50% 50%;
+    }
+}
