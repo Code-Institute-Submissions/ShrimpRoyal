@@ -72,6 +72,15 @@ Font-Size: 1em;
   
   
 /*========general settings================*/
+
+.navbar-nav .nav-item .nav-link {
+    cursor: pointer;
+    color: #ffb82f;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #ffffff;
+}
 .featurette-divider{
 	margin-top: 3.5em;
 	margin-bottom: 3.5em;
@@ -111,15 +120,24 @@ line-height:1em;
 p{
     letter-spacing: 0.05em;
 }
+.genus{
+color: rgb(112, 155, 211);
+cursor: pointer;
+}
 
 .infoshrimp{
-    background-image: url("../images/shrimp_info_image.png");
+    background-image: url("../images/cherry.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80% 50%;
     min-height: 20em;
+     transition: background 200ms ease-in-out 300ms;
 
 }
+
+
+
+
 @media (min-width: 768px) { 
     .infoshrimp{
         background-position: 50% 50%;
