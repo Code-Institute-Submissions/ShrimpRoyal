@@ -75,11 +75,11 @@ Font-Size: 1em;
 
 .navbar-nav .nav-item .nav-link {
     cursor: pointer;
-    color: #ffb82f;
+    color: #ffffff;
 }
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
-    color: #ffffff;
+    color: #ffb82f
 }
 .featurette-divider{
 	margin-top: 3.5em;
