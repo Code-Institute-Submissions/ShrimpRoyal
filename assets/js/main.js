@@ -1,6 +1,6 @@
     window.addEventListener("load", function (event) {
-
-
+        console.log(window.location.hostname)
+//https://kristianandersen.github.io/ShrimpRoyal/
 
     let bgshrimp = document.querySelectorAll(".genus");
     for (let i=0; i<bgshrimp.length; i++){
