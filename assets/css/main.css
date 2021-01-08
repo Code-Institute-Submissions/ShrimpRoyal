@@ -108,3 +108,6 @@ h2{
    font-size: calc(2em + 6 * ((100vw - 320px) / 680));
 line-height:1em;
 }
+p{
+    letter-spacing: 0.05em;
+}
