@@ -1,5 +1,6 @@
     window.addEventListener("load", function (event) {
        
+        /**fix gitpod/githop image path */
         let path=" "
        
        if(window.location.hostname==="kristianandersen.github.io"){
@@ -40,4 +41,16 @@ console.log(shrimptype)
                 }
 
     }
+    /**toggle menu show/hide when clicking menu links */
+    let nava = document.querySelectorAll(".navbar-collapse a");
+
+    for (let i=0; i<nava.length; i++){
+	    nava[i].addEventListener("click", togglemenu);
+    }
+    function togglemenu(){
+        document.querySelector(".navbar-collapse").classList.toggle("show");
+ 
+    }
+
+
 });

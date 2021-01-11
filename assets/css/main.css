@@ -31,17 +31,10 @@ Font-Size: 1em;
   
 }
 
-/*=========fonts==================*/
 
-@font-face {
-	font-family: "blackbird";
-	src: url(../fonts/blackbird/Blackbird.otf);
-}
-.bb{
-   font-family: "blackbird"; 
-}
+
 /*========Helpers================*/
-
+/*
 .noselect {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -49,7 +42,7 @@ Font-Size: 1em;
 	-ms-user-select: none;
 	user-select: none;
 }
-
+*/
   .full-width { 
 	padding-right:0;padding-left:0;padding-top:0;
 	margin-right:-15px;margin-left:0px;
@@ -135,6 +128,10 @@ cursor: pointer;
 
 }
 
+.eqtlist{
+    list-style-type: none;
+    padding-left: 0rem;
+}
 
 
 
