@@ -1,5 +1,9 @@
     window.addEventListener("load", function (event) {
        
+var vid = document.getElementById("svid");
+vid.playbackRate = 1;
+ vid.autoplay = true;
+
         /**fix gitpod/githop image path */
         let path=" "
        
