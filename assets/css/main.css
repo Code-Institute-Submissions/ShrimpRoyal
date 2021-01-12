@@ -102,7 +102,7 @@ h1{
 
 h2{
    Font-Family: 'Playfair Display', Serif;
-   font-size: calc(2em + 6 * ((100vw - 320px) / 680));
+   font-size: calc(2em + 4 * ((100vw - 320px) / 680));
     line-height:1em;
 }
 p{

@@ -1,4 +1,4 @@
-window.addEventListener("load", function (event) {
+document.addEventListener('DOMContentLoaded', function() {
 
  /**fix gitpod/githop image path */
     let path = " "
@@ -55,7 +55,7 @@ window.addEventListener("load", function (event) {
     /**play pause video if it is viseble  */
      window.addEventListener('scroll', function () {
         let vid = document.querySelector('#svid');
-        let position = vid.getBoundingClientRect();
+        
 
         // checking whether fully visible
         if (isInViewport(vid)) {
