@@ -20,6 +20,7 @@
 **_Technologies:_**
 - HTML
 - CSS
+- Java Script
 
  **_Features:_**
 - Features that have been developed
@@ -74,3 +75,14 @@ Find information about how to keep and care for cherry shrimps
 ## Design Choices ##
 ---
 Cherry shrimps originate from the freshwater streams of Taiwan, so the Logo (Shrimp Royale), is loosely inspired by East Asian Kawaii and Taiwanese calligraphy.  
+
+## Wireframes ##
+---
+I used [Figma](https://www.figma.com/). To produced **lo-fi** wireframes just to get a guideline and so I could get a better **feeling** for what would go where and how things would look on different screen sizes.
+
+Wireframes in order:\
+Mobile view  
+Tablet view  
+Desktop view  
+
+![Wireframe](/wireframes/wireframes.png)

@@ -18,12 +18,13 @@ html{
     scroll-behavior: smooth;
 }
 body{
-        Font-Family: 'Source Sans Pro', Sans-Serif;
-Font-Size: 1em;
+    Font-Family: 'Source Sans Pro', Sans-Serif;
+    Font-Size: 1em;
 }
 /*========colors==================*/
 :root {
   --white: #ffffff;
+  --black: #000000;
   --basegrey:rgb(195, 195, 195);
   --txtgrey:rgb(83, 80, 80);
   --infonumbers:rgb(149, 144, 144);
@@ -58,7 +59,11 @@ Font-Size: 1em;
   }
 
 
-  
+ /* custom font for svg logo*/
+ @font-face {
+    font-family: 'Blackbird'; /*a name to be used later*/
+    src: url('../fonts/blackbird/Blackbird.woff'); /*URL to font*/
+} 
   
 /*========general settings================*/
 
@@ -69,6 +74,9 @@ Font-Size: 1em;
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
     color: #ffb82f
+}
+.bb{
+    font-family:'Blackbird' ;
 }
 .featurette-divider{
 	margin-top: 3.5em;
@@ -92,6 +100,9 @@ header{
 	height: 100%;
     padding: calc(1em + 3em * ((100vh - 320px) / 680));;
     padding-bottom: 0;
+}
+svg{
+      font-family: 'Blackbird';
 }
 h1{
    Font-Family: 'Playfair Display', Serif;
