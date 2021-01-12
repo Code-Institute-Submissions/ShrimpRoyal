@@ -53,7 +53,7 @@ Font-Size: 1em;
 	  text-align: center;
   }
 
-  .placeholder-img {
+ .featurette-img {
 	font-size: 1.125rem;
 	text-anchor: middle;
 	-webkit-user-select: none;
@@ -100,22 +100,21 @@ header{
 h1{
    Font-Family: 'Playfair Display', Serif;
     font-size: calc(3em + 6 * ((100vw - 320px) / 680));
-
-line-height:0.9em;
+    line-height:0.9em;
 
 }
 
 h2{
    Font-Family: 'Playfair Display', Serif;
    font-size: calc(2em + 6 * ((100vw - 320px) / 680));
-line-height:1em;
+    line-height:1em;
 }
 p{
     letter-spacing: 0.05em;
 }
 .genus{
-color: rgb(112, 155, 211);
-cursor: pointer;
+    color: rgb(112, 155, 211);
+    cursor: pointer;
 }
 
 .infoshrimp{
@@ -128,7 +127,7 @@ cursor: pointer;
 
 }
 
-.featurette{
+.featurettelist{
     list-style-type: none;
     padding-left: 0rem;
 }
@@ -142,9 +141,24 @@ cursor: pointer;
     left:0;
     z-index:1;
 }
+   .image-col-big{
+        display: none;
+    }
 
 @media (min-width: 768px) { 
     .infoshrimp{
         background-position: 50% 50%;
+    }
+    .image-col{
+        display: none;
+    }
+
+     .image-col-big{
+        display: block;
+    }
+    .col-count{
+        padding-top: 1em;
+ column-count: 2;
+   column-fill: auto;
     }
 }
