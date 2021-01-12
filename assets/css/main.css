@@ -54,11 +54,7 @@ Font-Size: 1em;
   }
 
  .featurette-img {
-	font-size: 1.125rem;
-	text-anchor: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
+	width: 100%;
   }
 
 
@@ -112,6 +108,9 @@ h2{
 p{
     letter-spacing: 0.05em;
 }
+img{
+    width: 100%;
+}
 .genus{
     color: rgb(112, 155, 211);
     cursor: pointer;
@@ -144,6 +143,10 @@ p{
    .image-col-big{
         display: none;
     }
+    em{
+        display: block;
+        height: 1em;
+    }
 
 @media (min-width: 768px) { 
     .infoshrimp{
@@ -158,7 +161,11 @@ p{
     }
     .col-count{
         padding-top: 1em;
- column-count: 2;
-   column-fill: auto;
+        column-count: 2;
+        column-fill: auto;
+         vertical-align: baseline;
+    }
+    .extraemheight{
+        height: 2.5em;
     }
 }
