@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         path = ".."
     }
-    console.log()
+
 
 
     let bgshrimp = document.querySelectorAll(".genus");

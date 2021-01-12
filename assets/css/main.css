@@ -21,6 +21,16 @@ body{
     Font-Family: 'Source Sans Pro', Sans-Serif;
     Font-Size: 1em;
 }
+/*Preload a few images for nice mouseover effect */
+body:after {
+    content: url('../assets/images/bluejelly.png') 
+    url('../assets/images/greenjade.png')
+    url('../assets/images/sunkist.png')
+    url('../assets/images/Rili.png')
+    url('../assets/images/cherry.png');
+    display: none;
+}
+
 /*========colors==================*/
 :root {
   --white: #ffffff;
