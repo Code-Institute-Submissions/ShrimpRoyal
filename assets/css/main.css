@@ -153,8 +153,9 @@ img{
 }
 #intro{
     background-color: #000000;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     color: #ffffff;
+    min-height: 200px;
 }
 #intro p{
 margin-bottom: 0;
@@ -166,7 +167,7 @@ margin-bottom: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80% 50%;
-    min-height: 20em;
+    min-height: 320px;
      transition: background 200ms ease-in-out 300ms;
 
 }
