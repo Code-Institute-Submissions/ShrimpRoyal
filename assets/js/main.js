@@ -25,6 +25,7 @@ webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0m
 
     let bgshrimp = document.querySelectorAll(".genus");
     for (let i = 0; i < bgshrimp.length; i++) {
+       
         bgshrimp[i].addEventListener("mouseenter", toggleTools);
     }
 
