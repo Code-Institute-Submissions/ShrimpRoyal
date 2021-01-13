@@ -450,30 +450,26 @@
                             <!-- Name -->
                             <div class="form-group label-floating">
                                 <label class="control-label" for="name">Name</label>
-                                <input class="form-control" id="name" type="text" name="name" required  placeholder="Enter your name" pattern="[A-Za-z0-9]+"
-                                    data-error="Please enter your name">
-                                <div class="help-block with-errors"></div>
+                                <input class="form-control" id="name" type="text" name="name" required  placeholder="Enter your name" pattern="[A-Za-z0-9]+" aria-label="Name input">
+                                
                             </div>
                             <!-- email -->
                             <div class="form-group label-floating">
                                 <label class="control-label" for="email">Email</label>
-                                <input class="form-control" id="email" type="email" name="email" required placeholder="Enter a valid email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-                                    data-error="Please enter your Email">
-                                <div class="help-block with-errors"></div>
+                                <input class="form-control" id="email" type="email" name="email" required placeholder="Enter a valid email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" aria-label="email input">
+                               
                             </div>
                             <!-- Subject -->
                             <div class="form-group label-floating">
                                 <label for="msg_subject" class="control-label">Subject</label>
-                                <input class="form-control" id="msg_subject" type="text" name="subject" required placeholder="Enter a Subject" pattern="[A-Za-z0-9]+"
-                                    data-error="Please enter your message subject">
-                                <div class="help-block with-errors"></div>
+                                <input class="form-control" id="msg_subject" type="text" name="subject" required placeholder="Enter a Subject" pattern="[A-Za-z0-9]+" aria-label="Subject input">
+                              
                             </div>
                             <!-- Message -->
                             <div class="form-group label-floating">
                                 <label for="message" class="control-label">Message</label>
-                                <textarea class="form-control" rows="3" id="message" name="message" required placeholder="Enter your message" pattern="[A-Za-z0-9]+"
-                                    data-error="Write your message"></textarea>
-                                <div class="help-block with-errors"></div>
+                                <textarea class="form-control" rows="3" id="message" name="message" required placeholder="Enter your message" pattern="[A-Za-z0-9]+" aria-label="Message input"></textarea>
+                                
                             </div>
                             <!-- Form Submit -->
                             <div class="form-submit mt-5 text-center">
