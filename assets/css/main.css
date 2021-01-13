@@ -27,7 +27,12 @@ body:after {
     url('../assets/images/greenjade.png')
     url('../assets/images/sunkist.png')
     url('../assets/images/Rili.png')
-    url('../assets/images/cherry.png');
+    url('../assets/images/cherry.png')
+    url('../assets/images/bluejelly.webp') 
+    url('../assets/images/greenjade.webp')
+    url('../assets/images/sunkist.webp')
+    url('../assets/images/Rili.webp')
+    url('../assets/images/cherry.webp');
     display: none;
 }
 
@@ -134,7 +139,7 @@ img{
     width: 100%;
 }
 .genus{
-    color: rgb(112, 155, 211);
+    color:#ffb82f;
     cursor: pointer;
 }
 
