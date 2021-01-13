@@ -145,6 +145,7 @@ img{
 
 .infoshrimp{
     background-image: url("../images/cherry.png");
+    background-image: url("../images/cherry.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80% 50%;
