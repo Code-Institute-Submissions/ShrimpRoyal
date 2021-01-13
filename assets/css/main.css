@@ -71,8 +71,9 @@ body:after {
 
  /* custom font for svg logo*/
  @font-face {
-    font-family: 'Blackbird'; /*a name to be used later*/
-    src: url('../fonts/blackbird/Blackbird.woff'); /*URL to font*/
+    font-family: 'Blackbird'; 
+    src: url('../fonts/blackbird/Blackbird.woff'); 
+    font-display: swap;
 } 
   
 /*========general settings================*/

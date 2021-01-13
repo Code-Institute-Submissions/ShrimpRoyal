@@ -9,6 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
         path = ".."
     }
 
+/*is webP supportet */
+let imageType=""
+var webp = new Image();
+webp.onerror = function(){
+    imageType="png"
+};
+webp.onload = function(){
+    imageType="webp"
+    
+};
+webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
+
 
 
     let bgshrimp = document.querySelectorAll(".genus");
@@ -24,19 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(shrimptype)
         switch (shrimptype) {
             case "bj":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/bluejelly.png)';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/bluejelly.'+imageType+')';
                 break;
             case "gj":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/greenjade.png)';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/greenjade.'+imageType+')';
                 break;
             case "sk":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/sunkist.png)';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/sunkist.'+imageType+')';
                 break
             case "rl":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/Rili.png)';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/Rili.'+imageType+')';
                 break
             case "cs":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/cherry.png)';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/cherry.'+imageType+')';
                 break
         }
 
