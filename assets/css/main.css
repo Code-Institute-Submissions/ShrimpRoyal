@@ -93,6 +93,7 @@ body:after {
 }
 .bb{
     font-family:'Blackbird' ;
+    font-display: swap;
 }
 .featurette-divider{
 	margin-top: 3.5em;
@@ -119,11 +120,13 @@ header{
 }
 svg{
       font-family: 'Blackbird';
+      font-display: swap;
 }
 h1{
    Font-Family: 'Playfair Display', Serif;
     font-size: calc(3em + 6 * ((100vw - 320px) / 680));
     line-height:0.9em;
+    font-display: swap;
 
 }
 
@@ -131,6 +134,7 @@ h2{
    Font-Family: 'Playfair Display', Serif;
    font-size: calc(2em + 4 * ((100vw - 320px) / 680));
     line-height:1em;
+    font-display: swap;
 }
 p{
     letter-spacing: 0.05em;
@@ -141,6 +145,10 @@ img{
 .genus{
     color:#026166;
     cursor: pointer;
+}
+
+.genus:hover{
+    color:#2D35A2;
 }
 
 .infoshrimp{

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         path = ".."
     }
 
-/*is webP supportet */
+/*is webP supportet or not*/
 let imageType=""
 var webp = new Image();
 webp.onerror = function(){
@@ -34,7 +34,7 @@ webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0m
 
 
         let shrimptype = evt.target.getAttribute("title");
-        console.log(shrimptype)
+    
         switch (shrimptype) {
             case "bj":
                 infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/bluejelly.'+imageType+')';
@@ -65,7 +65,7 @@ webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0m
 
     }
 
-    /**play pause video if it is viseble  */
+    /**auto play pause video if it is viseble  */
      window.addEventListener('scroll', function () {
         let vid = document.querySelector('#svid');
         
