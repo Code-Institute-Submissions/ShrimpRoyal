@@ -143,15 +143,23 @@ img{
     width: 100%;
 }
 .genus{
-    color:#026166;
+    color:#90CCCF;
     cursor: pointer;
 }
 
 .genus:hover{
-    color:#2D35A2;
+    color:#ffb82f;
 }
-
+#intro{
+    background-color: #000000;
+    padding-bottom: 1em;
+    color: #ffffff;
+}
+#intro p{
+margin-bottom: 0;
+}
 .infoshrimp{
+    background-color: #000000;
     background-image: url("../images/cherry.png");
     background-image: url("../images/cherry.webp");
     background-size: cover;
@@ -183,6 +191,23 @@ img{
         display: block;
         height: 1em;
     }
+    footer{
+        background-color: black;
+        color: #ffffff;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+footer p{
+    margin-bottom: 0;
+}
+    footer a{
+    color:#90CCCF;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color:#ffb82f;
+}
 
 @media (min-width: 768px) { 
     .infoshrimp{
