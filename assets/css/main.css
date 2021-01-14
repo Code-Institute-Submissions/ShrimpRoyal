@@ -1,3 +1,10 @@
+ /* custom font for svg logo*/
+ @font-face {
+    font-family: 'Blackbird'; 
+    src: url('../fonts/blackbird/Blackbird.woff'); 
+    font-display: swap;
+} 
+
 /*========reset================*/
 *,
 *:after,
@@ -39,12 +46,7 @@ body{
   }
 
 
- /* custom font for svg logo*/
- @font-face {
-    font-family: 'Blackbird'; 
-    src: url('../fonts/blackbird/Blackbird.woff'); 
-    font-display: swap;
-} 
+
   
 /*========general settings================*/
 
