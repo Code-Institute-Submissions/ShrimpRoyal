@@ -43,7 +43,7 @@ body{
  @font-face {
     font-family: 'Blackbird'; 
     src: url('../fonts/blackbird/Blackbird.woff'); 
-    font-display: optional;
+    font-display: swap;
 } 
   
 /*========general settings================*/
