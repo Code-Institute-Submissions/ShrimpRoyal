@@ -3,6 +3,7 @@
 
 ![Shrimp Royal](/wireframes/hero-image.png)
 
+
 # Table of contents
 
  **_UX:_**
@@ -34,16 +35,16 @@
 ## UX (User Experience) ##
 ---
 ### Project Goals ### 
-The goal of this project is to provide **a beginner guide on how one can successfully keep and care for cherry shrimps.** In the hope that more people get into the stress-relieving hobby of keeping aquatic pets. 
+The goal of this project is to provide **a beginner guide on how one can successfully keep and care for cherry shrimps.** . 
 
 ### User Goals ###
 Find information about how to keep and care for cherry shrimps
 1. Cherry shrimp general information
-2. What equipment is needed (Aquarium, Filter, Heater, Light )
-3. substrate ( Gravel, Sand, Dirt, Specializes soil)
-4. Water parameters (KH, GH, PH, TDS, ammonia, nitrite, or nitrate Temperature)
-5. Live plants (easy to intermediate)
-6. AquaScaping ( Rocks, Roots, hardscape, techniques ) 
+2. What equipment is needed 
+3. substrate
+4. Water parameters 
+5. Live plants
+6. AquaScaping  
 7. Be able to contact the site owner either via email or a contact form
 
 
