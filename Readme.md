@@ -21,7 +21,9 @@
 **_Technologies:_**
 - HTML
 - CSS
+- Bootstrap 
 - Java Script
+
 
  **_Features:_**
 - Features that have been developed
@@ -87,3 +89,34 @@ Tablet view
 Desktop view  
 
 ![Wireframe](/wireframes/wireframes.png)
+
+## Features that have been implemented: ##
+---
+- Responsive and easy asy to use navigation
+- Picture set and lazyloading with webp images for supporting browsers and png images as a fallback for unsupporting browsers
+- Responsive gallery
+- Contact form
+
+## Technologies used: ##
+---
+**_Languages:_**
+- HTML
+- CSS
+- JS
+
+**_Tools:_**
+- Git
+- Github
+- Gitpod
+- Figma for wireframing
+- Illustrator for SVG creation
+
+**_Libraries:_**
+- Bootstrap 5
+- Google Fonts
+
+
+## Testing: ##
+---
+
+- Google lighthouse 

@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
- /**fix gitpod/githop image path */
+    /**fix gitpod/githop image path */
     let path = " "
 
     if (window.location.hostname === "kristianandersen.github.io") {
@@ -9,23 +9,23 @@ document.addEventListener('DOMContentLoaded', function() {
         path = ".."
     }
 
-/*is webP supportet or not*/
-let imageType=""
-var webp = new Image();
-webp.onerror = function(){
-    imageType="png"
-};
-webp.onload = function(){
-    imageType="webp"
-    
-};
-webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
+    /*is webP supportet or not*/
+    let imageType = ""
+    var webp = new Image();
+    webp.onerror = function () {
+        imageType = "png"
+    };
+    webp.onload = function () {
+        imageType = "webp"
+
+    };
+    webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
 
 
 
     let bgshrimp = document.querySelectorAll(".genus");
     for (let i = 0; i < bgshrimp.length; i++) {
-       
+
         bgshrimp[i].addEventListener("mouseenter", toggleTools);
     }
 
@@ -33,29 +33,31 @@ webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0m
         let infoshrimp = document.querySelector(".infoshrimp");
 
 
-        let shrimptype = evt.target.getAttribute("title");
-    
+        const shrimptype = evt.target.getAttribute("title");
+
         switch (shrimptype) {
             case "bj":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/bluejelly.'+imageType+')';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/bluejelly.' + imageType + ')';
                 break;
             case "gj":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/greenjade.'+imageType+')';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/greenjade.' + imageType + ')';
                 break;
             case "sk":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/sunkist.'+imageType+')';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/sunkist.' + imageType + ')';
                 break
             case "rl":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/Rili.'+imageType+')';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/Rili.' + imageType + ')';
                 break
             case "cs":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/cherry.'+imageType+')';
+                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/cherry.' + imageType + ')';
                 break
         }
 
     }
-    /**toggle menu show/hide when clicking menu links */
-    let nava = document.querySelectorAll(".navbar-collapse a");
+    /**
+     * toggle menu show/hide when clicking menu links 
+     * */
+    const nava = document.querySelectorAll(".navbar-collapse a");
 
     for (let i = 0; i < nava.length; i++) {
         nava[i].addEventListener("click", togglemenu);
@@ -66,25 +68,24 @@ webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0m
     }
 
     /**auto play pause video if it is viseble  */
-     window.addEventListener('scroll', function () {
-        let vid = document.querySelector('#svid');
-        
+    window.addEventListener('scroll', function () {
+        const vid = document.querySelector('#svid');
+
 
         // checking whether fully visible
         if (isInViewport(vid)) {
             vid.play();
-            //console.log('Play')
 
 
         } else {
             vid.pause();
-           // console.log("pause")
+
         }
     });
 
-/**check if vide is in viewport or not */
+    /**check if vide is in viewport or not */
     function isInViewport(elm) {
-        var bounding = elm.getBoundingClientRect();
+        const bounding = elm.getBoundingClientRect();
         return (
             bounding.top >= 0 &&
             bounding.left >= 0 &&
