@@ -1,13 +1,5 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
-
-:root
-{
+:root{
   --bluej: rgb(2, 177, 247);
   --greenj: rgb(0, 136, 45);
   --sunk: rgb(209, 240, 11);
@@ -15,50 +7,42 @@
   --cshrimp: rgb(177, 0, 0);
 }
 
-
- @font-face
-{
+ @font-face{
   font-family: 'Blackbird';
   src: url('../fonts/blackbird/Blackbird.woff');
   font-display: swap;
 }
 
-/*========reset================*/
-
 *,
 *:after,
-*:before
-{
+*:before{
  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-*
-{
+*{
   margin: 0;
   padding: 0;
 }
 
-html
-{
+html{
   font-size: 62.5%;
   line-height: 1.4;
   scroll-behavior: smooth;
 }
 
-body
-{
+body{
   Font-Family: 'Source Sans Pro', Sans-Serif;
   Font-Size: 1.2rem;
   font-display: swap;
   background-color: #f0efef;
 }
 
-header
-{
+header{
   margin-top: 3.5rem;
   min-height: 100vh;
 }
+
 header::before{
     content: 'Scroll down for more';
     position: absolute;
@@ -72,6 +56,7 @@ header::before{
     display: block;
     text-align: center;
 }
+
 header::after{
     content: '';
     position: absolute;
@@ -81,60 +66,50 @@ header::after{
     height: 0;
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
-    border-top: 2rem solid #e8e8e8;
+    border-top: 2rem solid #f0efef;
     clear: both;
 }
-
-
-
 
 /*fonts & typography*/
 /* custom font for svg logo*/
 
-
-
-h1
-{
+h1{
   Font-Family: 'Playfair Display', Serif;
   font-size: 3.2rem;
   line-height: 4rem;
   font-display: swap;
 }
 
-h2
-{
+h2{
   Font-Family: 'Playfair Display', Serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-display: swap;
 }
-p
-{
+
+p{
   letter-spacing: 0.05em;
   font-size: 1.2rem;
 }
+
 li{
     font-size: 1.2rem;
 }
+
 a{
     color:#0244A7!important;
 }
-.logoFont
-{
+
+.logoFont{
   font-family: 'Blackbird';
   font-size: 2.5rem;
   font-display: swap;
   color: #ffffff;
 }
 
-
-.featurette-heading
-{
+.featurette-heading{
   display: block;
 }
-
-
-
 
 .nav-link{
   cursor: pointer;
@@ -145,21 +120,16 @@ a{
   color: #ffb82f !important;
 }
 
-
-
-.center-txt
-{
+.center-txt{
   text-align: center;
 }
 
-.featurette-img
-{
+.featurette-img{
   width: 100%;
 }
 
 /*SVG logo*/
-.svgwrap
-{
+.svgwrap{
   height: 50vh;
   overflow: hidden;
   padding-top: 100%;
@@ -167,8 +137,7 @@ a{
   position: relative;
 }
 
-.insidsvgwrap
-{
+.insidsvgwrap{
   position: absolute;
   top: 0;
   left: 0;
@@ -176,33 +145,41 @@ a{
   height: 100%;
 }
 
-.shrimproyalelogo
-{
+.shrimproyalelogo{
   display: block;
   width: 100%;
   height: 100%;
   padding-bottom: 0;
 }
 
-svg
-{
+svg{
   font-family: 'Blackbird';
   font-display: swap;
 }
+
 .shrimpRoyalTxt{
     opacity: 0;
 }
- .shrimpRoyalTxt{
-     
-    animation: fadeInAnimation ease 3s; 
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-    animation-delay: .5s;
+
+.shrimpRoyalTxt{
+    -webkit-animation: fadeInAnimation ease 3s;
+            animation: fadeInAnimation ease 3s; 
+    -webkit-animation-iteration-count: 1; 
+            animation-iteration-count: 1; 
+    -webkit-animation-fill-mode: forwards; 
+            animation-fill-mode: forwards; 
+    -webkit-animation-delay: .5s; 
+            animation-delay: .5s;
  }
- 
-
-
- @keyframes fadeInAnimation { 
+@-webkit-keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+@keyframes fadeInAnimation { 
     0% { 
         opacity: 0; 
     } 
@@ -211,12 +188,8 @@ svg
      } 
 } 
 
-
-
-
 /*Slide image*/
-#intro
-{
+#intro{
   background-color: #000000;
   padding-top: calc(10vh);
   color: #ffffff;
@@ -226,27 +199,22 @@ svg
 }
 
 
-#intro p
-{
+#intro p{
   margin-bottom: 0;
 }
 
-#introTxt
-{
+#introTxt{
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
 
-.infoshrimp
-{
+.infoshrimp{
   height: 50vh;
- 
   background-image: url("../images/cherry.png");
   background-image: url("../images/cherry.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 80% 50%;
-
   -webkit-transition: background 200ms ease-in-out 300ms;
   -o-transition: background 200ms ease-in-out 300ms;
   transition: background 200ms ease-in-out 300ms;
@@ -254,8 +222,7 @@ svg
  
 }
 
-.featurette-divider
-{
+.featurette-divider{
   margin-top: 3.5em;
   margin-bottom: 3.5em;
   padding: 0.05rem;
@@ -266,250 +233,223 @@ svg
   display: block;
 }
 
-.gallery_img
-{
+.gallery_img{
   margin-bottom: 1em;
 }
 
-
-img
-{
+img{
   width: 100%;
 }
 
-.genus
-{
+.genus{
   color: #90CCCF;
   cursor: pointer;
 }
 
-.genus.bluej:hover
-{
+.genus.bluej:hover{
   color: var(--bluej);
 }
 
-.genus.greenj:hover
-{
+.genus.greenj:hover{
   color: var(--greenj);
 }
 
-.genus.rile:hover
-{
+.genus.rile:hover{
   color: var(--rile);
 }
 
-.genus.sunk:hover
-{
+.genus.sunk:hover{
   color: var(--sunk);
 }
 
-.genus.cshrimp:hover
-{
+.genus.cshrimp:hover{
   color: var(--cshrimp);
 }
 
-.featurettelist
-{
+.featurettelist{
   list-style-type: none;
   padding-left: 0rem;
 }
 
-.svid
-{
+.svid{
   position: relative;
   z-index: 0;
   width: 100%;
 }
 
-.overlayText
-{
+.overlayText{
   position: relative;
-  ;
-    top: -15em;
+  top: -15em;
   left: 0;
   z-index: 1;
 }
 
-.image-col-big
-{
+.image-col-big{
   display: none;
 }
 
-em
-{
+em{
   display: block;
   height: 1em;
 }
 
-footer
-{
+.btn-outline-secondary{
+color: #4F4F4F;
+}
+
+footer{
   background-color: black;
   color: #ffffff;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-footer p
-{
+footer p{
   margin-bottom: 0;
 }
 
-footer a
-{
-  color: #90CCCF;
-  cursor: pointer;
+footer a{
+    color:#589AFD!important;
 }
 
-footer a:hover
-{
+footer a:hover{
   color: #ffb82f;
 }
 
-
-
-
 /*Medium devices in portray mode*/
-@media (min-width: 768px) and(orientation: portrait)
-{
+@media (min-width: 768px) and(orientation: portrait){
 
-header::before{
-    font-size: 1.8rem;
-    bottom:2rem;
-}
-header::after{
-    bottom:-5.2rem;
-}
+    header::before{
+        font-size: 1.8rem;
+        bottom:2rem;
+    }
+    header::after{
+        bottom:-5.2rem;
+    }
 
 }
 
-@media (min-width: 768px)
-{
+@media (min-width: 768px){
     
-header::before{
-    font-size: 1.8rem;
-    bottom:-2rem;
-}
-header::after{
-    bottom:-5.2rem;
-}
+    header::before{
+        font-size: 1.8rem;
+        bottom:-2rem;
+    }
+    header::after{
+        bottom:-5.2rem;
+    }
 
-  h1{
-   Font-Family: 'Playfair Display', Serif;
-  font-size: 7.2rem;
-  line-height: 8rem;
-  font-display: swap;
+    h1{
+        Font-Family: 'Playfair Display', Serif;
+        font-size: 7.2rem;
+        line-height: 8rem;
+        font-display: swap;
+    }
+
+    h2{
+        Font-Family: 'Playfair Display', Serif;
+        font-size: 6rem;
+        line-height: 7rem;
+        font-display: swap;
+    }
+    
+    p{
+        letter-spacing: 0.05em;
+        font-size: 1.8rem;
+    }
+
+    li{
+        font-size: 1.8rem;
+    }
+
+    #introTxt
+    {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .infoshrimp
+    {
+      background-position: 90% 50%;
+    }
+
+    .image-col{
+        display: none;
+    }
+
+    .image-col-big{
+        display: block;
+    }
+
+    .col-count{
+        padding-top: 1em;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-fill: auto;
+        -moz-column-fill: auto;
+        column-fill: auto;
+        vertical-align: baseline;
+        -webkit-column-gap: 3rem;
+           -moz-column-gap: 3rem;
+                column-gap: 3rem;
+    }
+
+    .extraemheight{
+        height: 1.55rem;
+    }
 }
-
-h2
-{
-  Font-Family: 'Playfair Display', Serif;
-  font-size: 6rem;
-  line-height: 7rem;
-  font-display: swap;
-}
-p
-{
-  letter-spacing: 0.05em;
-  font-size: 1.8rem;
-}
-li{
-     font-size: 1.8rem;
-}
-#introTxt
-{
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-
-.infoshrimp
-{
-  background-position: 90% 50%;
-}
-
-.image-col
-{
-  display: none;
-}
-
-.image-col-big
-{
-  display: block;
-}
-
-.col-count
-{
-  padding-top: 1em;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-fill: auto;
-  -moz-column-fill: auto;
-  column-fill: auto;
-  vertical-align: baseline;
-  column-gap: 3rem;
-}
-
-.extraemheight
-{
-  height: 1.55rem;
-}
-}
-
-
-
-
-
-
 
 /*Desktop or big screen devices in landscape mode*/
 
 @media (min-width: 992px )and (orientation : landscape){
 
-header::before{
-    font-size: 1.8rem;
-    bottom:-2rem;
-}
-header::after{
-    bottom:-5.4rem;
-}
- 
-p{
-  letter-spacing: 0.05em;
-  font-size: 2rem;
-}
-li:not(.nav-item){
-     font-size: 2rem;
-     font-style: italic;
-}
-  .svgwrap {
-  height: 70vh;
-  padding-top: 1rem;
-}
+    header::before{
+        font-size: 1.8rem;
+        bottom:-2rem;
+    }
+    header::after{
+        bottom:-5.4rem;
+    }
+    
+    p{
+        letter-spacing: 0.05em;
+        font-size: 2rem;
+    }
 
-.insidsvgwrap{
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
-  padding-top: 5rem;
-}
+    li:not(.nav-item){
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    .svgwrap {
+        height: 70vh;
+        padding-top: 1rem;
+    }
+
+    .insidsvgwrap{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        padding-top: 5rem;
+    }
 
 
-#introTxt{
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
-}
+    #introTxt{
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
 
-.infoshrimp
-{
-  display: block;
-  background-position: 50% 50%;
-  max-height: 50vh;
-  bottom: 0;
-}
+    .infoshrimp{
+        display: block;
+        background-position: 50% 50%;
+        max-height: 50vh;
+        bottom: 0;
+    }
     
  }

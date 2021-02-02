@@ -66,7 +66,7 @@ Find information about how to keep and care for cherry shrimps
 **Requirements**
 
 - Easy navigate the website via navbar.
-- Be provide with useful information throughout the website.
+- Be provided with useful information throughout the website.
 - Content is visually appealing and easily comprehensible.
 - Be able to contact the site owner.
 
@@ -81,12 +81,12 @@ Cherry shrimps originate from the freshwater streams of Taiwan, so the Logo (Shr
 
 **Fonts**
 
-For Shrimp royals logo i used [Black Bird](https://www.dafont.com/blackbird.font) to have a feeling of calligraphy but still get a readeble resoult.
-For headers i used Googles [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) and for body i used [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro?query=Source+Sans+Pro)
+For Shrimp royals logo I used [Black Bird](https://www.dafont.com/blackbird.font) to have a feeling of calligraphy but still get a readable result.
+For headers, I used Googles [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) and for the body, I used [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro?query=Source+Sans+Pro)
 
 **Colors**
 
-I am rooted in scandinavian design so i kept my colors the same way, minimal. 
+I am rooted in Scandinavian design traditions so I kept my colours the same way, minimal. 
 
 ![Colors](/wireframes/colors.png)
 ## Wireframes ##
@@ -102,7 +102,7 @@ Desktop view
 
 ## Features that have been implemented: ##
 ---
-- Responsive and easy asy to use navigation
+- Responsive and easy  to use navigation
 - Picture set webp images for supporting browsers and png images as a fallback for unsupporting browsers
 - Native lazy-loading for supporting browsers (global 72.72%)
 - Responsive gallery
