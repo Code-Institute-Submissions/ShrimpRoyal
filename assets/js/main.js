@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
         path = ".."
     }
 
-    /*is webP supportet or not*/
+    /**
+     * Check if browser supports webP images ells fallback to png
+     */
     let imageType = ""
     var webp = new Image();
     webp.onerror = function () {
@@ -19,78 +21,80 @@ document.addEventListener('DOMContentLoaded', function () {
         imageType = "webp"
 
     };
+
     webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoBAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
 
 
+    let bgShrimp = document.querySelectorAll(".genus");
+    for (let i = 0; i < bgShrimp.length; i++) {
 
-    let bgshrimp = document.querySelectorAll(".genus");
-    for (let i = 0; i < bgshrimp.length; i++) {
-
-        bgshrimp[i].addEventListener("mouseenter", toggleTools);
+        bgShrimp[i].addEventListener("mouseenter", toggleTools);
     }
-
+    /**
+     * Change the background image on mouse over
+     */
     function toggleTools(evt) {
-        let infoshrimp = document.querySelector(".infoshrimp");
 
-
+        const infoShrimp = document.querySelector(".infoshrimp");
         const shrimptype = evt.target.getAttribute("title");
 
         switch (shrimptype) {
             case "bj":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/bluejelly.' + imageType + ')';
+                infoShrimp.style.backgroundImage = 'url(' + path + '/assets/images/bluejelly.' + imageType + ')';
                 break;
             case "gj":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/greenjade.' + imageType + ')';
+                infoShrimp.style.backgroundImage = 'url(' + path + '/assets/images/greenjade.' + imageType + ')';
                 break;
             case "sk":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/sunkist.' + imageType + ')';
+                infoShrimp.style.backgroundImage = 'url(' + path + '/assets/images/sunkist.' + imageType + ')';
                 break
             case "rl":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/Rili.' + imageType + ')';
+                infoShrimp.style.backgroundImage = 'url(' + path + '/assets/images/Rili.' + imageType + ')';
                 break
             case "cs":
-                infoshrimp.style.backgroundImage = 'url(' + path + '/assets/images/cherry.' + imageType + ')';
+                infoShrimp.style.backgroundImage = 'url(' + path + '/assets/images/cherry.' + imageType + ')';
                 break
         }
-
     }
-    /**
-     * toggle menu show/hide when clicking menu links 
-     * */
-    const nava = document.querySelectorAll(".navbar-collapse a");
 
-    for (let i = 0; i < nava.length; i++) {
-        nava[i].addEventListener("click", togglemenu);
+    /**
+     * toggle bootstrap menu in mobile mode 
+     * show/hide when clicking menu links 
+     * */
+    const navigationA = document.querySelectorAll(".navbar-collapse a");
+
+    for (let i = 0; i < navigationA.length; i++) {
+        navigationA[i].addEventListener("click", togglemenu);
     }
     function togglemenu() {
         document.querySelector(".navbar-collapse").classList.toggle("show");
 
     }
 
-    /**auto play pause video if it is viseble  */
+    /**auto play pause shrimpVideClipeo if it is viseble  */
     window.addEventListener('scroll', function () {
-        const vid = document.querySelector('#svid');
-
-
+        const shrimpVideClip = document.querySelector('#sshrimpVideClip');
         // checking whether fully visible
-        if (isInViewport(vid)) {
-            vid.play();
-
-
+        if (isInViewport(shrimpVideClip)) {
+            shrimpVideClip.play();
         } else {
-            vid.pause();
+            shrimpVideClip.pause();
 
         }
     });
 
-    /**check if vide is in viewport or not */
+    /**
+     * check if shrimpVideClipeo is in viewport 
+     * Start shrimpVideClipeo if it is visible in viewport
+     * Stop it if it is outside viewport
+     * */
     function isInViewport(elm) {
-        const bounding = elm.getBoundingClientRect();
+        const viewPortBounding = elm.getviewPortBoundingClientRect();
         return (
-            bounding.top >= 0 &&
-            bounding.left >= 0 &&
-            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+            viewPortBounding.top >= 0 &&
+            viewPortBounding.left >= 0 &&
+            viewPortBounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            viewPortBounding.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     };
 

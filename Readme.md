@@ -105,29 +105,108 @@ Desktop view
 - Responsive and easy  to use navigation
 - Picture set webp images for supporting browsers and png images as a fallback for unsupporting browsers
 - Native lazy-loading for supporting browsers (global 72.72%)
+- a small video clip that starts if it is in the viewport and stops ven outside the viewport
 - Responsive gallery
-- Contact form
+
+## Features Left to Implement ##
+---
+-contact form functionality
+
+
+## Deployment ##
+---
+ The project was deployed to GitHub Pages using the following steps:
+
+-  Log in to GitHub and locate the [GitHub Repository](https://github.com/kristianAndersen/ShrimpRoyal)
+-  At the top of the Repository (not top of page), locate the "Settings" button on the menu.
+-  Scroll down the Settings page until you locate the "GitHub Pages" Section.
+-  Under "Source", click the dropdown called "None" and select "Master Branch".
+-  The page will automatically refresh.
+-  Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+ 
 
 ## Technologies used: ##
 ---
-**_Languages:_**
-- HTML
-- CSS
-- JS
+**_Markup and style:_**
+* [HTML5](https://en.wikipedia.org/wiki/HTML5/)
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets/)
+* [Bootstrap5](https://getbootstrap.com)
+
+**_Languages:_**  
+* [JavaScript](https://javascript.com)
 
 **_Tools:_**
-- Git
-- Github
-- Gitpod
-- Figma for wireframing
-- Illustrator for SVG Logo creation
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com)
+- [VS code](https://code.visualstudio.com/) for coding
+- [Gitpod](https://gitpod.io/) for copy/pasting from VS code and commiting to Github
+- [Uncss](https://uncss-online.com/) / [Uncss Nodejs](https://github.com/uncss/uncss) to create a slimmed-down version of bootstrap5
+- [Figma](https://www.figma.com/) for wireframing
+- [Illustrator](https://www.adobe.com/dk/products/illustrator.html) for SVG Logo creation
 
 **_Libraries:_**
-- Bootstrap 5
-- Google Fonts
-
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Google Fonts](https://fonts.google.com/)
 
 ## Testing: ##
 ---
 
-- Google lighthouse 
+With Lambdatest I tested that ShrimpRoyale worked in different browsers on windows.
+
+I tested Chrom, Edge Firefox Opera on windows 10 and Ie on windows 8.
+On Apple Mac, I tested in Chrome, Safari, and Brave. + all devises that chrome dev tools can emulate.
+[lambdatest](https://app.lambdatest.com/)
+
+**Google lighthouse**
+
+An overall score of 95%. It could have been better if I dropped support for inferior browsers
+![Google Lighthouse](/wireframes/lighthouse-test.png)
+
+**The W3C Markup Validation Service**
+
+I get a few warnings and errors
+
+-  Warning: Section lacks heading.
+-  Error: Bad value 100% for attribute width on element video: 
+
+Fixes
+
+- I let the warnings pass because I got headings in all article tags.
+- I removed width="100%" from video tag and set it in main.css
+
+**The W3C CSS Validation Service**
+
+I get warnings for 
+
+_Property font-display doesn't exist : swap._
+
+- I keep it well knowing that it is not yet a living standard but it has (91.97%) global browser support
+
+**Bugs**
+
+- I use a slimmed-down version of bootstrap with no-js because I do not use all the Features beside the responsiveness/grids
+so I had to fix the nav-bar not collapsing on click. 
+
+## Credits ##
+---
+
+**Media**
+- Big thanks to my Shrimps for looking nice 
+- Thanks to the nice users @ r/shrimptank/ for letting me use a few of their images
+- Thanks to Google images  
+
+**Content**
+
+Content on the site was adapted from
+- https://aquamania.co.id/news-detail/5
+- https://www.liveaquaria.com/
+- https://aquariumstoredepot.com/blogs/news/freshwater-shrimp-tank
+- https://www.fishkeepingtoday.com/set-up-shrimp-tank/
+- https://habitart.id/13-dreamy-ways-to-use-string-lights-in-your-backyard/
+
+**Code**
+-  Bootstrap5 used in the project to make the site responsive utilising the Grid System. 
+-  Bootstrap was also used for the site's navbar 
+
+**Acknowledgements** 
+- Thanks to Code Institutes Student Care for helping out when I ran out of GitPod time
