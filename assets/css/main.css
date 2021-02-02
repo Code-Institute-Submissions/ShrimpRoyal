@@ -116,12 +116,15 @@ p
 li{
     font-size: 1.2rem;
 }
-
+a{
+    color:#0244A7!important;
+}
 .logoFont
 {
   font-family: 'Blackbird';
   font-size: 2.5rem;
   font-display: swap;
+  color: #ffffff;
 }
 
 
