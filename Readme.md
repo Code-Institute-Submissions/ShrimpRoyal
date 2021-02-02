@@ -109,7 +109,7 @@ Desktop view
 - Github
 - Gitpod
 - Figma for wireframing
-- Illustrator for SVG creation
+- Illustrator for SVG Logo creation
 
 **_Libraries:_**
 - Bootstrap 5
