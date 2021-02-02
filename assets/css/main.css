@@ -51,6 +51,7 @@ body
   Font-Family: 'Source Sans Pro', Sans-Serif;
   Font-Size: 1.2rem;
   font-display: swap;
+  background-color: #e8e8e8;
 }
 
 header
@@ -58,11 +59,24 @@ header
   margin-top: 3.5rem;
   min-height: 100vh;
 }
+header::before{
+    content: 'Scroll down for more';
+    position: absolute;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro';
+    left: 0;
+    bottom: -2rem;
+    width: 100%;
+    height: 5rem;
+    clear: both;
+    display: block;
+    text-align: center;
+}
 header::after{
     content: '';
     position: absolute;
     left: calc(50% - 2rem);
-    top: 95%;
+    bottom: -5.3rem;
     width: 0;
     height: 0;
     border-left: 2rem solid transparent;
@@ -71,20 +85,7 @@ header::after{
     clear: both;
 }
 
-header::before{
-    content: 'Scroll down for more';
-    position: absolute;
-    font-size: 1rem;
-    font-family: 'Source Sans Pro';
-    left: 0;
-    top: 92%;
-    width: 100%;
-    height: 5rem;
-    clear: both;
-    
-    display: block;
-    text-align: center;
-}
+
 
 
 /*fonts & typography*/
@@ -142,10 +143,6 @@ li{
 }
 
 
-/*========Helpers================*/
-
-
-
 
 .center-txt
 {
@@ -189,13 +186,36 @@ svg
   font-family: 'Blackbird';
   font-display: swap;
 }
+.shrimpRoyalTxt{
+    opacity: 0;
+}
+ .shrimpRoyalTxt{
+     
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    animation-delay: .5s;
+ }
+ 
+
+
+ @keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+
+
 
 /*Slide image*/
 #intro
 {
   background-color: #000000;
   padding-top: calc(10vh);
-  /*padding-bottom: calc(10vh);*/
   color: #ffffff;
   height: 50vh;
   padding-right: 0px;
@@ -212,8 +232,6 @@ svg
 {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-
-
 }
 
 .infoshrimp
@@ -249,7 +267,6 @@ svg
 {
   margin-bottom: 1em;
 }
-
 
 
 img
@@ -298,6 +315,7 @@ img
 {
   position: relative;
   z-index: 0;
+  width: 100%;
 }
 
 .overlayText
@@ -352,8 +370,11 @@ footer a:hover
 {
 
 header::before{
-    font-size: 1.6rem;
-    top: 93%; 
+    font-size: 1.8rem;
+    bottom:2rem;
+}
+header::after{
+    bottom:-5.2rem;
 }
 
 }
@@ -361,7 +382,13 @@ header::before{
 @media (min-width: 768px)
 {
     
-
+header::before{
+    font-size: 1.8rem;
+    bottom:-2rem;
+}
+header::after{
+    bottom:-5.2rem;
+}
 
   h1{
    Font-Family: 'Playfair Display', Serif;
@@ -433,25 +460,21 @@ li{
 
 /*Desktop or big screen devices in landscape mode*/
 
-
 @media (min-width: 992px )and (orientation : landscape){
 
- header::before{
+header::before{
     font-size: 1.8rem;
-    top: 99%;
+    bottom:-2rem;
 }
 header::after{
-    top: 99%;
- 
+    bottom:-5.4rem;
 }
-
  
-    p
-{
+p{
   letter-spacing: 0.05em;
   font-size: 2rem;
 }
-li{
+li:not(.nav-item){
      font-size: 2rem;
      font-style: italic;
 }

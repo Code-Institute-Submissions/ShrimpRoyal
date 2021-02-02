@@ -77,8 +77,18 @@ Find information about how to keep and care for cherry shrimps
 
 ## Design Choices ##
 ---
-Cherry shrimps originate from the freshwater streams of Taiwan, so the Logo (Shrimp Royale), is loosely inspired by East Asian Kawaii and Taiwanese calligraphy.  
+Cherry shrimps originate from the freshwater streams of Taiwan, so the Logo (Shrimp Royale), is loosely inspired by East Asian Kawaii and Taiwanese calligraphy. 
 
+**Fonts**
+
+For Shrimp royals logo i used [Black Bird](https://www.dafont.com/blackbird.font) to have a feeling of calligraphy but still get a readeble resoult.
+For headers i used Googles [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) and for body i used [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro?query=Source+Sans+Pro)
+
+**Colors**
+
+I am rooted in scandinavian design so i kept my colors the same way, minimal. 
+
+![Colors](/wireframes/colors.png)
 ## Wireframes ##
 ---
 I used [Figma](https://www.figma.com/). To produced **lo-fi** wireframes just to get a guideline and so I could get a better **feeling** for what would go where and how things would look on different screen sizes.
@@ -93,7 +103,8 @@ Desktop view
 ## Features that have been implemented: ##
 ---
 - Responsive and easy asy to use navigation
-- Picture set and lazyloading with webp images for supporting browsers and png images as a fallback for unsupporting browsers
+- Picture set webp images for supporting browsers and png images as a fallback for unsupporting browsers
+- Native lazy-loading for supporting browsers (global 72.72%)
 - Responsive gallery
 - Contact form
 
